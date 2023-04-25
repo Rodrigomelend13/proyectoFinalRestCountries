@@ -1,0 +1,174 @@
+#closeCanvas {
+    top:150%;
+    left:4%;
+}
+.canvasImg{
+    position: absolute;
+    top: 280%;
+    left: 6%;
+    height:18rem;
+    width: 30rem;
+    object-fit: cover;
+}
+.containerInfo{
+    max-width: 35rem;
+    max-height:15rem;
+    height: 100%;
+    width: 100%;
+    top:300%;
+    left:50%;
+}
+
+
+.container-input {
+    position: relative;
+  }
+  
+  .input {
+    width: 330px;
+    padding: 10px 0px 10px 40px;
+    border-radius: 9999px;
+    border: solid 1px #242424;
+    transition: all .2s ease-in-out;
+    outline: none;
+    opacity: 0.3;
+  }
+  
+  .container-input svg {
+    position: absolute;
+    padding-left:5px;
+    fill: rgb(129, 129, 129);
+    top: 50%;
+    left:1%;
+    transform: translate(0, -50%);
+  }
+  
+  .input:focus {
+    opacity: 1;
+    width: 430px;
+    background-color: var(--bg-body-tertiary-rgba);
+  }
+
+  .loader {
+    width: 25px;
+    height:12px;
+    background: linear-gradient(#0000 calc(1*100%/6),#fff 0 calc(3*100%/6),#0000 0),
+                linear-gradient(#0000 calc(2*100%/6),#fff 0 calc(4*100%/6),#0000 0),
+                linear-gradient(#0000 calc(3*100%/6),#fff 0 calc(5*100%/6),#0000 0);
+    background-size: 10px 400%;
+    background-repeat: no-repeat;
+    animation: matrix 1.5s infinite linear;
+  }
+
+  .createBy{
+    width:15rem;
+    height:15px;
+  }
+  
+  @keyframes matrix {
+    0% {
+      background-position: 0% 100%, 50% 100%, 100% 100%
+    }
+  
+    100% {
+      background-position: 0% 0%, 50% 0%, 100% 0%
+    }
+  }
+      
+
+
+   /* aqui estilizamos el searchBar para vista mediana */
+   @media (max-width: 992px) {
+    .container-input svg {
+        position: absolute;
+        top: 50%;
+        left:2%;
+        transform: translate(0, -50%);
+      }
+
+      .input {
+        width: 730px;
+        padding: 10px 0px 10px 40px;
+        border-radius: 9999px;
+        border: solid 1px #242424;
+        transition: all .2s ease-in-out;
+        outline: none;
+        opacity: 0.3;
+      }
+     
+      .input:focus {
+        opacity: 1;
+        width: 750px;
+        background-color:var(--bg-body-tertiary-rgba);
+      }
+
+      #closeCanvas {
+        top:130%;
+        left:6%;
+    }
+    .canvasImg{
+        position: absolute;
+        top: 250%;
+        left: 10%;
+        height:16rem;
+        width:25rem;
+        object-fit: cover;
+    }
+    .containerInfo{
+        max-width: 35rem;
+        max-height:15rem;
+        height: 100%;
+        width: 100%;
+        top:750%;
+        left: 10%;
+    }
+  }
+
+
+
+/* aqui estilizamos la searchBar para vista mobile */
+  @media (max-width: 576px) {
+    .container-input svg {
+        position: absolute;
+        top: 50%;
+        left:3%;
+        transform: translate(0, -50%);
+      }
+
+      .input {
+        width: 540px;
+        padding: 10px 0px 10px 40px;
+        border-radius: 9999px;
+        border: solid 1px #242424;
+        transition: all .2s ease-in-out;
+        outline: none;
+        opacity: 0.3;
+      }
+     
+      .input:focus {
+        opacity: 1;
+        width: 550px;
+       background-color:var(--bg-body-tertiary-rgba);
+      }
+    
+      #closeCanvas {
+        top:130%;
+        left:5%;
+    }
+    .canvasImg{
+        position: absolute;
+        top: 250%;
+        object-fit:cover;
+        max-width:18rem;
+        height:15rem;
+        width:100%;
+    }
+    .containerInfo{
+        max-width: 35rem;
+        max-height:15rem;
+        height: 100%;
+        width: 100%;
+        top:750%;
+    }
+}
+

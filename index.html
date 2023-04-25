@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='./js/app.js' type='module' defer></script>
+
+  <!-- Links de bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <!-- link de google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <!-- enlazar los script -->
+  <title>REST COUNTRIES</title>
+</head>
+
+<body>
+
+<!-- Aqui escribire para el Titulo y Dark Mode -->
+<body class="container">
+  <header class="fixed-top shadow-sm pt-2 bg-body-tertiary d-flex justify-content-between">
+
+    <div class="my-3 px-2 px-lg-4"><h3 class="fw-bold">Where in the world?</h3></div>
+    <div class="d-flex align-items-center px-3"><span class="material-symbols-outlined">
+      dark_mode
+      </span> <a id="changeTheme" class="navbar-brand" href="#">Dark Mode</a></div>
+ </header> 
+ <!-- aqui escribire codigo para el input y el select(dropdown)  -->
+ <div class="mt-5 pt-5 d-lg-flex">  
+ 
+  <div class="container-input input-group mt-3 justify-content-center w-100 justify-content-md-center justify-content-lg-start">
+    <input id="inputSearch" type="text" placeholder="Search for a Country..." name="text" class="input rounded">
+    <svg class="d-flex" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+      <path  d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+  </svg>
+  </div>
+  
+
+  <div class="dropdown mt-5 mx-2 mt-lg-3 mx-lg-0 ">
+    <a id="dropdownTextContent" class="btn py-3 px-3 bg-body-tertiary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Filter by Region
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Show All</a></li>
+      <li><a class="dropdown-item" href="#">Americas</a></li>
+      <li><a class="dropdown-item" href="#">Africa</a></li>
+      <li><a class="dropdown-item" href="#">Oceania</a></li>
+      <li><a class="dropdown-item" href="#">Europe</a></li>
+      <li><a class="dropdown-item" href="#">Asia</a></li>
+      <li><a class="dropdown-item" href="#">Antarctic</a></li>
+
+    </ul>
+  </div>
+
+
+</div>
+  <main>
+    <section class="container mt-5 pt-0 text-center" id="container">
+      <div id="addCountries" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-3 gap-5 justify-content-center justify-content-lg-start"> 
+
+        <!-- Aqui van los nuevos  cards con sus paises correspondientes -->
+
+     </div>
+    </section>
+
+   <!-- aqui escribire para el offCanvas --> 
+           <div class="offcanvas offcanvas-start  h-100 w-100" tabindex="1" id="offcanvas" aria-labelledby="offcanvasBottomLabel">
+
+             <div id="innerFlags" class="offcanvas-header">
+              <!--aqui va el contenidpo que mostrara dentro del offCanvas -->
+
+              </div> 
+              </div>
+</main>
+<footer class="d-flex justify-content-center mt-5 pt-5"> 
+    <div class="loader">  
+    <div class="createBy mx-4 pt-0 fw-bolder fs-6">By Rodrigo Melendez</div>
+    </div>
+</footer>
+
+</body>
+</html>
